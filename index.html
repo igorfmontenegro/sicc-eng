@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SICC CESMAC </title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d48fb25e74.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body onload="slide1()">
+    
+    <div id="container">
+        
+        <header> 
+            <span> #SICC2022 </span>
+        </header>
+
+        <div id="c-introduction">
+
+            <div class="c-introduction__slide">
+                <img id="c-introduction__banner" src="./images/sicc33-banner.png" alt="banner">
+            </div>
+            
+        </div>
+            
+        <div id="c-board">
+
+            <div class="c-board__text">
+                <span class="c-board__text-item"> 
+                    CERTIFICADOS DE PARTICIPAÇÃO <br>
+                    LIBERADOS NA PLATAFORMA 
+                </span>
+
+                <a href="#"><button type="submit" class="c-board__button"><i class="fa-sharp fa-solid fa-right-to-bracket"></i> CERTIFICADOS </button></a>
+                <a href="#"><button type="submit" class="c-board__button" style="background-color: var(--var-colorMain)"><i class="fa-sharp fa-solid fa-right-to-bracket"></i> VER FOTOS DO EVENTO </button></a>
+                
+            </div>
+
+            <div class="c-board__buttons">
+                <ul class="c-board__buttons-list">
+                    <a href="#c-programming"><button class="c-board__buttons-item"> PROGRAMAÇÃO </button></a>
+                    <a href="#c-speakers"><button class="c-board__buttons-item"> PALESTRANTES </button></a>
+                    <a href="#c-honored__subtitle"><button class="c-board__buttons-item"> HOMENAGEADOS </button></a>
+                    <a href="#c-sponsors"><button class="c-board__buttons-item"> PATROCINADORES </button></a>
+                </ul>
+            </div>
+
+            <div style="max-width: 80vw; margin:auto">
+                <hr style="border: 1px solid var(--var-colorMain)">
+            </div>
+
+            <div class="c-board__info">
+                <ul class="c-board__info-list" style="margin-top: 30px; margin-bottom: 0px">
+                    <li class="c-board__info-item"> 6 <br> <hr class="hr-list"> Palestras </li>
+                    <li class="c-board__info-item"> 2 <br> <hr class="hr-list"> Minicursos </li>
+                    <li class="c-board__info-item"> +10 <br> <hr class="hr-list"> Palestrantes </li>
+                    <li class="c-board__info-item"> +16 <br> <hr class="hr-list"> Horas de Conteúdo </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div id="c-event">
+
+            <div class="c-event__maxtitle">
+                <h1 style="font-weight: 600"> 33º SIMPÓSIO DA CONSTRUÇÃO CIVIL </h3>
+            </div>
+
+            <div class="c-event__subtitle">
+                <h2 style="font-weight: 400"> Os diversos caminhos que a Engenharia Civil proporciona </h2>
+                <h3 style="font-weight: 300"> 26 de Novembro de 2022 </h3>
+            </div>
+
+            <div class="c-event__video">
+                <video class="c-event__video-item" src="./images/video-sicc.mp4" muted controls poster="./images/cover-2.png" preload="none"></video>
+                <p id="c-event__description"> 
+                    O <strong> SICC - Simpósio da Construção Civil </strong> é organizado pelos alunos do último ano do curso de Engenharia Civil do CESMAC, coordenados pelo Prof. Moisés da Luz. <br><br>
+                    O evento é realizado semestralmente e teve seu <strong> início em outubro de 2006 </strong>, atendendo a demanda inicial dos alunos do curso de Engenharia Civil do Cesmac. A partir do 12º (Jun/2012),
+                    atende a toda comunidade da construção civil. <br><br>
+                    
+                    Realizamos até o momento <strong><italic>32 eventos, sendo 28 presenciais e 4 via web </italic></strong> com 240 palestras, 5 exposições de trabalhos científicos, 29 minicursos e 10 mesas redondas, 
+                    <strong><italic>onde contamos com 234 palestrantes, mais de 6.100 participantes presenciais e mais de 8.500 visualizações no YouTube </italic></strong> nos últimos eventos. <br><br>
+
+                    Participe conosco desse grande encontro!
+                </p>
+            </div>
+        </div>
+
+        <div id="c-speakers">
+
+                <h4 class="c-speakers__subtitle">PALESTRANTES</h4>
+                <hr>
+
+                <div id="back" class="btn" onclick="showLess(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div id="next" class="btn" onclick="showMore(+1)">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+
+            <div id="slide-container">
+                <div class="slide-content">
+                    <div class="card-wrapper">
+                        <!-- <div class="card">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name"> NOME DO PALESTANTE </h2>
+                                <p class="description"> DESCRIÇÃO DO PALESTRANTE </p>
+                                <button class="button-viewmore"> Ver mais </button>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="c-programming">
+            <div class="c-programming__container">
+                <div class="c-programming__subtitle">
+                    <h4> PROGRAMAÇÃO </h4>
+                    <br><br>
+                    <span style="font-weight: 300;"> Clique na data abaixo para expandir e visualizar a programação: </span>
+                    <br>
+
+                    <div class="c-day">
+                        <button class="c-day__box">
+                            <h3 class="c-day__subtitle"> + DIA 26 de NOVEMBRO </h3>
+                        </button>
+                        <div class="c-day__roadmap">
+                            <img src="./images/day18.png" width="90%">
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="c-honored">
+                        <h4 id="c-honored__subtitle"> HOMENAGEADO </h4>
+                        <img class="c-honored__img" src="./images/matheusmartins.png">
+                        <h6 class="c-honored__name"> Matheus Martins </h6>
+                </div>
+            </div>
+        </div>
+
+        <div id="c-organization">
+            <div class="c-organization">
+                <h6 class="c-organization__subtitle"> COMITÊ ORGANIZADOR </h6>
+
+                <div class="photos-wrapper">
+                    <!-- <div class="organization-single">
+                        <img class="img-single" src="">
+                        <p style="text-align: center;"> 
+                            <strong> NOME DO ORGANIZADOR </strong>
+                            <br>
+                            DESCRIÇÃO DO ORGANIZADOR 
+                        </p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div id="c-sponsors">
+            <div class="c-sponsors">
+                <h4 class="c-sponsors__subtitle"> PATROCINADORES </h4>
+              
+                <div class="c-sponsors__wrapper">
+                    <!-- <div class="c-sponsor-single">
+                        <img class="c-sponsor__img" src=">
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+    <script src="peoples.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
