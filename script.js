@@ -11,12 +11,12 @@ let sponsorWrapper = document.querySelector(".c-sponsors__wrapper");
 
 
 function slide1(){
-    document.getElementById("c-introduction__banner").src="./images/sicc33-banner.png";
+    document.getElementById("c-introduction__banner").src="./images/sicc33-banner.jpg";
     setTimeout("slide2()", 3000)
 }
 
 function slide2(){
-    document.getElementById("c-introduction__banner").src="./images/banner-1.png"
+    document.getElementById("c-introduction__banner").src="./images/banner-1.jpg"
     setTimeout("slide1()", 3000);
 }
 
