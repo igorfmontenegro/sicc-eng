@@ -1,4 +1,8 @@
 let bannerSlides = ["./images/sicc33-banner.png", "./images/banner-1.png"];
+let counterLecture = document.getElementById("counter1");
+let counterCourse = document.getElementById("counter2");
+let counterSpeakers = document.getElementById("counter3");
+let counterHours = document.getElementById("counter4");
 let cardWrapper = document.querySelector(".card-wrapper");
 let boxProgramming = document.querySelector(".c-day__box");
 let roadMap = document.querySelector(".c-day__roadmap");
@@ -19,6 +23,19 @@ function slide2(){
     document.getElementById("c-introduction__banner").src="./images/banner-1.jpg"
     setTimeout("slide1()", 3000);
 }
+
+function increment(i,max,element){
+    if (i > max) return;
+    setTimeout(function(){
+        element.innerText = Math.round(i);
+        increment(i+(max/100), max, element);
+    }, 10)
+}
+
+increment(0, 6, counter1);
+increment(0, 2, counter2);
+increment(0, 10, counter3);
+increment(0, 12, counter4);
 
 function createCard(image, name, description){
     let newCard = document.createElement("div");
