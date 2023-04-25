@@ -32,10 +32,29 @@ function increment(i,max,element){
     }, 10)
 }
 
-increment(0, 6, counter1);
-increment(0, 2, counter2);
-increment(0, 10, counter3);
-increment(0, 12, counter4);
+const divCount = document.querySelector("#counters");
+let windowHeight = window.innerHeight;
+let windowSee = windowHeight * 0.88;
+let alreadySee = false;
+
+function animateCounter(){
+    let bouding = divCount.getBoundingClientRect();
+    if(!alreadySee && bouding.top < windowSee){
+        alreadySee = true;
+        increment(0, 6, counter1);
+        increment(0, 2, counter2);
+        increment(0, 10, counter3);
+        increment(0, 12, counter4);
+    }
+}
+
+animateCounter();
+
+document.addEventListener("scroll", function () {
+    animateCounter();
+});
+
+
 
 function createCard(image, name, description){
     let newCard = document.createElement("div");
