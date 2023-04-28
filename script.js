@@ -1,17 +1,13 @@
 let bannerSlides = ["./images/sicc33-banner.png", "./images/banner-1.png"];
-let counterLecture = document.getElementById("counter1");
-let counterCourse = document.getElementById("counter2");
-let counterSpeakers = document.getElementById("counter3");
-let counterHours = document.getElementById("counter4");
-let cardWrapper = document.querySelector(".card-wrapper");
-let boxProgramming = document.querySelector(".c-day__box");
+const cardWrapper = document.querySelector(".card-wrapper");
+const boxProgramming = document.querySelector(".c-day__box");
 let roadMap = document.querySelector(".c-day__roadmap");
 let cProgramming = document.querySelector("#c-programming");
 let subtitleDay = document.querySelector(".c-day__subtitle");
 let displayNone = true;
 
-let photosWrapper = document.querySelector(".photos-wrapper");
-let sponsorWrapper = document.querySelector(".c-sponsors__wrapper");
+const photosWrapper = document.querySelector(".photos-wrapper");
+const sponsorWrapper = document.querySelector(".c-sponsors__wrapper");
 
 
 function slide1(){
